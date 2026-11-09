@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>СТУЛЬЯ АСТАНА (@stulya_astany) — Официальный онлайн-каталог Mebel Lustra & MANO</title>
+  <meta name="description" content="Дизайнерские столы, стулья из массива ясеня и карагача, торшеры в наличии в Астане: пр. Аль-Фараби, 7/3 (Mebel Lustra). Рассрочка Kaspi 0-0-12." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0f19;
+      color: #f8fafc;
+    }
+    .font-serif-lux {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fde047 0%, #d4af37 50%, #fef08a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .kaspi-badge {
+      background: linear-gradient(135deg, #f14635 0%, #dc2626 100%);
+    }
+    .card-glass {
+      background: rgba(17, 24, 39, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    /* Interactive Before/After Slider */
+    .ba-slider-wrap {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      border-radius: 1rem;
+    }
+    .ba-after-layer {
+      position: absolute;
+      top: 0; left: 0; bottom: 0;
+      width: 50%;
+      overflow: hidden;
+      border-right: 3px solid #fde047;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-amber-400 selection:text-slate-950">
+
+  <!-- ВЕРХНЯЯ ПЛАШКА ДЛЯ ПРОДАВЦА АКМАРАЛ И РУКОВОДИТЕЛЯ САЛОНА -->
+  <div class="bg-gradient-to-r from-amber-500/20 via-emerald-500/20 to-amber-500/20 border-b border-amber-400/30 px-4 py-2.5 text-center text-xs md:text-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 mx-auto md:mx-0">
+        <span class="px-2 py-0.5 rounded bg-amber-400 text-slate-950 font-bold uppercase text-[11px]">Демо-версия специально для @stulya_astany</span>
+        <span class="text-slate-200">Готовый сайт-каталог + ИИ-интерьеры ваших реальных товаров + Помощник менеджера в WhatsApp</span>
+      </div>
+      <div class="flex items-center gap-3 mx-auto md:mx-0">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 border border-emerald-500/40 text-emerald-300 font-semibold text-xs" title="Счётчик просмотров демо-презентации">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>👁 Просмотров: <b id="live-view-counter">19</b></span>
+        </span>
+        <a href="#assistant-demo" class="text-emerald-300 hover:text-emerald-200 underline font-medium">🤖 Как помощник разгружает менеджера</a>
+        <a href="#director-block" class="px-3 py-1 rounded-full bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs transition">📲 Переслать руководителю</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ШАПКА САЙТА @STULYA_ASTANY -->
+  <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-lg shadow-amber-500/20">
+          SA
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-base md:text-lg tracking-tight text-white">СТУЛЬЯ АСТАНА</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-slate-800 text-amber-300 border border-amber-500/30 font-mono">@stulya_astany</span>
+          </div>
+          <p class="text-xs text-slate-400">📍 Астана, пр. Аль-Фараби, 7/3 (Mebel Lustra) • ул. Асфендиярова, 5 (@mano.store.kz)</p>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#catalog" class="hover:text-amber-300 transition">Каталог в наличии</a>
+        <a href="#before-after" class="hover:text-amber-300 transition">Сравнение «Было / Стало»</a>
+        <a href="#assistant-demo" class="hover:text-amber-300 transition">Умный помощник WhatsApp</a>
+        <a href="#director-block" class="hover:text-amber-300 transition">Для руководства</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://wa.me/77476188385?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%90%D0%BA%D0%BC%D0%B0%D1%80%D0%B0%D0%BB!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD-%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B0%20stulya_astany"
+           target="_blank"
+           class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs md:text-sm flex items-center gap-2 shadow-lg shadow-emerald-600/25 transition">
+          <span>💬 Написать Акмарал</span>
+          <span class="hidden sm:inline font-mono text-emerald-100">+7 747 618-83-85</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO СЕКЦИЯ С ЖИВЫМ СЛАЙДЕРОМ «ДО / ПОСЛЕ» -->
+  <section class="relative overflow-hidden py-10 md:py-16 border-b border-slate-800/80">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-slate-950 to-slate-950 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Левая колонка: Оффер мебельного шоурума -->
+      <div class="lg:col-span-6 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-amber-500/40 text-amber-300 text-xs font-semibold">
+          <span>✨ 23 700+ подписчиков в Астане</span>
+          <span>•</span>
+          <span>Шоурум Mebel Lustra & MANO</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white">
+          Дизайнерские <span class="gold-gradient-text">столы и стулья</span> из массива в Астане
+        </h1>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Все хиты вашего Instagram <span class="text-white font-semibold">@stulya_astany</span> — теперь в удобном онлайн-каталоге с переключением интерьеров, точными размерами, расчётом <span class="text-rose-400 font-semibold">Kaspi Рассрочки 0-0-12</span> и мгновенной заявкой в WhatsApp.
+        </p>
+
+        <div class="grid grid-cols-3 gap-3 pt-1">
+          <div class="card-glass rounded-xl p-3.5">
+            <div class="text-amber-400 font-extrabold text-lg md:text-xl">от 23 000 ₸</div>
+            <div class="text-xs text-slate-400 mt-0.5">Стул Kone (Хит 2026)</div>
+          </div>
+          <div class="card-glass rounded-xl p-3.5">
+            <div class="text-rose-400 font-extrabold text-lg md:text-xl">Kaspi 0•0•12</div>
+            <div class="text-xs text-slate-400 mt-0.5">от 1 917 ₸ / мес</div>
+          </div>
+          <div class="card-glass rounded-xl p-3.5">
+            <div class="text-emerald-400 font-extrabold text-lg md:text-xl">Акция 4 + 1</div>
+            <div class="text-xs text-slate-400 mt-0.5">5-й стул в подарок 🎁</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="#catalog" class="px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm shadow-xl shadow-amber-400/20 transition">
+            🪑 Смотреть каталог (7 моделей в наличии)
+          </a>
+          <a href="#assistant-demo" class="px-5 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-semibold text-sm transition">
+            🤖 Попробовать WhatsApp-помощника
+          </a>
+        </div>
+      </div>
+
+      <!-- Правая колонка: Интерактивный ползунок ДО (Instagram) / ПОСЛЕ (Google Flow 2.1) -->
+      <div class="lg:col-span-6" id="before-after">
+        <div class="card-glass rounded-2xl p-4 border border-amber-500/30 shadow-2xl">
+          <div class="flex items-center justify-between mb-3">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Интерактивное сравнение</span>
+              <h2 class="text-sm md:text-base font-bold text-white">Передвигайте ползунок: Обычное фото в ленте ↔ ИИ-Интерьер Google Flow</h2>
+            </div>
+            <div class="flex gap-1.5">
+              <button onclick="setHeroComparison(0)" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-amber-300 font-medium">Стул Kone</button>
+              <button onclick="setHeroComparison(3)" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 font-medium">Стол Нордик</button>
+              <button onclick="setHeroComparison(4)" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 font-medium">Стол Бруни</button>
+            </div>
+          </div>
+
+          <div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden select-none bg-slate-900" id="hero-ba-container">
+            <!-- Фоновое изображение: ПОСЛЕ (ИИ-Интерьер Google Flow) -->
+            <img id="hero-after-img" src="assets/SKU_01_KONE_BEIGE_luxury.jpg" alt="После: ИИ-интерьер" class="w-full h-full object-cover" />
+            <span class="absolute top-3 right-3 px-3 py-1 rounded-lg bg-emerald-600/90 text-white font-bold text-xs shadow">
+              ✨ ПОСЛЕ: ИИ-Интерьер (Google Flow 2.1)
+            </span>
+
+            <!-- Передний слой: ДО (Исходник из Instagram) -->
+            <div id="hero-before-clip" class="absolute inset-y-0 left-0 overflow-hidden" style="width: 42%; border-right: 3px solid #fde047;">
+              <img id="hero-before-img" src="assets/SKU_01_KONE_BEIGE_orig.jpg" alt="До: Фото из Instagram" class="h-full max-w-none object-cover" style="width: 640px;" />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-lg bg-slate-900/90 text-slate-200 border border-slate-700 font-bold text-xs shadow">
+                📷 БЫЛО: Фото в Instagram
+              </span>
+            </div>
+
+            <!-- Ползунок управления -->
+            <input type="range" min="5" max="95" value="42" id="hero-ba-range"
+                   oninput="updateHeroSlider(this.value)"
+                   class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20" />
+          </div>
+
+          <div class="mt-3 flex items-center justify-between text-xs text-slate-400">
+            <span>⬅️ Потяните влево/вправо для сравнения</span>
+            <span class="text-amber-300 font-medium">Сохранена 100% геометрия и обивка вашей мебели</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- КАТАЛОГ ТОВАРОВ С ПЕРЕКЛЮЧАТЕЛЕМ 4 ВИДОВ НА КАЖДОЙ КАРТОЧКЕ -->
+  <section id="catalog" class="py-12 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 w-full">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Живая витрина @stulya_astany</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-white mt-1">Актуальные модели в наличии (4 режима просмотра)</h2>
+        <p class="text-sm text-slate-400 mt-1">Нажмите на кнопки над любой фотографией, чтобы переключить: <span class="text-amber-300">Сканди-интерьер</span>, <span class="text-amber-300">Вечерний Люкс</span>, <span class="text-rose-400">Инфографику Kaspi</span> или <span class="text-slate-300">Оригинал из Instagram</span>.</p>
+      </div>
+
+      <!-- Фильтры категорий -->
+      <div class="flex flex-wrap gap-2">
+        <button onclick="filterCategory('all')" id="filter-all" class="px-4 py-2 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs transition">Все товары (7)</button>
+        <button onclick="filterCategory('chair')" id="filter-chair" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs transition">🪑 Стулья и кресла (3)</button>
+        <button onclick="filterCategory('table')" id="filter-table" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs transition">🍽️ Столы (2)</button>
+        <button onclick="filterCategory('dining_group')" id="filter-dining_group" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs transition">✨ Обеденные группы (1)</button>
+        <button onclick="filterCategory('lighting')" id="filter-lighting" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs transition">💡 Торшеры LED (1)</button>
+      </div>
+    </div>
+
+    <!-- Сетка карточек -->
+    <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+  </section>
+
+  <!-- СЕКЦИЯ: КАК ЦИФРОВОЙ ПОМОЩНИК РАЗГРУЖАЕТ МЕНЕДЖЕРА АКМАРАЛ (НЕ ЗАМЕНЯЯ ЕЁ!) -->
+  <section id="assistant-demo" class="py-14 bg-slate-900/70 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Описание выгоды для продавца Акмарал -->
+      <div class="lg:col-span-6 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-bold">
+          🤝 Создано в помощь продавцу-консультанту, а не вместо него!
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+          Цифровой помощник менеджера в WhatsApp <span class="text-emerald-400">24/7 «Анти-Рутина»</span>
+        </h2>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Каждый день в директ и WhatsApp приходят десятки однотипных вопросов: <em class="text-white">«А какая цена?», «А какие размеры стула?», «Где вы находитесь?», «Есть ли Kaspi рассрочка?»</em> — часто поздно вечером или когда менеджер занят клиентом в зале на Аль-Фараби, 7/3.
+        </p>
+
+        <div class="space-y-3">
+          <div class="card-glass rounded-xl p-4 border-l-4 border-emerald-500">
+            <div class="font-bold text-white text-sm">1. Забирает на себя 80% утомительных однотипных вопросов</div>
+            <p class="text-xs text-slate-300 mt-1">За 2 секунды вежливо отправляет клиенту фото модели в интерьере, точные габариты, адрес шоурума Mebel Lustra и расчёт Kaspi 0-0-12.</p>
+          </div>
+          <div class="card-glass rounded-xl p-4 border-l-4 border-amber-400">
+            <div class="font-bold text-white text-sm">2. Передаёт менеджеру Акмарал уже «тёплого» клиента, готового к покупке</div>
+            <p class="text-xs text-slate-300 mt-1">Как только клиент выбрал модель или хочет оформить счёт на Kaspi / доставку, помощник сразу зовёт живого менеджера. Продавец не тратит нервы на пустые переписки и закрывает больше реальных сделок!</p>
+          </div>
+          <div class="card-glass rounded-xl p-4 border-l-4 border-sky-400">
+            <div class="font-bold text-white text-sm">3. Ночные заявки не сгорают</div>
+            <p class="text-xs text-slate-300 mt-1">Клиент смотрит Instagram в 23:30 → получает мгновенный ответ с каталогом → утром Акмарал остаётся только подтвердить бронь.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Интерактивный симулятор WhatsApp-чата -->
+      <div class="lg:col-span-6">
+        <div class="bg-slate-950 rounded-2xl border border-slate-800 shadow-2xl overflow-hidden">
+          <!-- Шапка WhatsApp -->
+          <div class="bg-emerald-800/90 px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-white text-emerald-900 font-extrabold flex items-center justify-center text-sm">SA</div>
+              <div>
+                <div class="text-white font-bold text-sm">СТУЛЬЯ АСТАНА • Помощник Акмарал</div>
+                <div class="text-emerald-200 text-[11px]">онлайн 24/7 • отвечает за 2 сек</div>
+              </div>
+            </div>
+            <span class="text-[11px] px-2.5 py-1 rounded-full bg-emerald-950/70 text-emerald-200 font-mono">Демо-режим</span>
+          </div>
+
+          <!-- Окно сообщений -->
+          <div id="wa-chat-box" class="p-4 space-y-3 h-80 overflow-y-auto bg-slate-900/60 text-xs sm:text-sm">
+            <div class="bg-slate-800 text-slate-200 p-3 rounded-xl rounded-tl-none max-w-[85%]">
+              👋 Здравствуйте! Я цифровой помощник салона <b>СТУЛЬЯ АСТАНА (@stulya_astany)</b>. Нажмите на любой частый вопрос покупателя ниже, чтобы посмотреть, как я помогаю менеджеру Акмарал:
+            </div>
+          </div>
+
+          <!-- Быстрые кнопки проверки частых вопросов -->
+          <div class="p-3.5 bg-slate-950 border-t border-slate-800 space-y-2">
+            <div class="text-[11px] text-slate-400 font-medium">Нажмите на типичный вопрос покупателя:</div>
+            <div class="flex flex-wrap gap-1.5">
+              <button onclick="simulateWaQuestion('price_kone')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-emerald-700 text-slate-200 hover:text-white text-xs transition">
+                💬 «Сколько стоит стул Kone и какие размеры?»
+              </button>
+              <button onclick="simulateWaQuestion('kaspi')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-emerald-700 text-slate-200 hover:text-white text-xs transition">
+                💳 «Есть рассрочка Kaspi 0-0-12 на стол Нордик?»
+              </button>
+              <button onclick="simulateWaQuestion('address')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-emerald-700 text-slate-200 hover:text-white text-xs transition">
+                📍 «Где ваш шоурум в Астане и до скольки работаете?»
+              </button>
+              <button onclick="simulateWaQuestion('promo41')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-emerald-700 text-slate-200 hover:text-white text-xs transition">
+                🎁 «Расскажите про акцию 4+1 на стулья из ясеня»
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- СПЕЦИАЛЬНЫЙ БЛОК ДЛЯ РУКОВОДИТЕЛЯ / ВЛАДЕЛЬЦА МАГАЗИНА (ДЛЯ ПЕРЕСЫЛКИ В 1 КЛИК) -->
+  <section id="director-block" class="py-14 max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="card-glass rounded-3xl p-6 sm:p-10 border-2 border-amber-400/40 shadow-2xl">
+      <div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-slate-800">
+        <div>
+          <span class="px-3 py-1 rounded-full bg-amber-400 text-slate-950 font-extrabold text-xs uppercase">Для руководителя @stulya_astany / Mebel Lustra</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-2">Готовый пакет обновления продаж для вашего салона</h2>
+        </div>
+        <button onclick="copyPageLink()" id="copy-link-btn" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-400/40 font-bold text-xs transition">
+          🔗 Скопировать ссылку для руководителя
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 my-6">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5">
+          <div class="text-amber-400 font-extrabold text-base mb-1">1. ИИ-Упаковка каталога</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Любое фото стула или стола прямо из зала превращается в 2 премиальных интерьера (Сканди + Неоклассика Астана) и продающую инфографику с плашкой Kaspi 0-0-12.
+          </p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5">
+          <div class="text-emerald-400 font-extrabold text-base mb-1">2. Сайт-витрина для Instagram</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            В шапке профиля вместо обычного мессенджера открывается быстрый каталог с фильтрами, калькулятором рассрочки и заказом в 1 клик.
+          </p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5">
+          <div class="text-sky-400 font-extrabold text-base mb-1">3. Помощник продавца 24/7</div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Мгновенно отвечает на 100% частых вопросов по ценам, размерам и адресам (пр. Аль-Фараби, 7/3 и ул. Асфендиярова, 5), передавая продавцу готовые заказы.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-800">
+        <div class="text-xs sm:text-sm text-slate-300">
+          💡 <b>Для менеджера Акмарал:</b> вы можете переслать эту рабочую ссылку руководителю одной кнопкой — все ваши товары и контакты уже настроены внутри.
+        </div>
+        <a id="forward-boss-wa" href="#" target="_blank"
+           class="w-full sm:w-auto text-center px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs sm:text-sm shadow-lg transition">
+          📲 Переслать презентацию руководителю в WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- МОДАЛЬНОЕ ОКНО СРАВНЕНИЯ «БЫЛО / СТАЛО» -->
+  <div id="ba-modal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-5xl w-full overflow-hidden shadow-2xl">
+      <div class="px-5 py-3.5 border-b border-slate-800 flex items-center justify-between">
+        <h3 id="ba-modal-title" class="font-bold text-white text-sm sm:text-base">Сравнение «Было в Instagram / Стало»</h3>
+        <button onclick="closeBaModal()" class="px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold">✕ Закрыть</button>
+      </div>
+      <div class="p-4 bg-slate-950 flex justify-center">
+        <img id="ba-modal-img" src="" alt="Коллаж Было / Стало" class="max-h-[78vh] w-auto rounded-xl object-contain" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ПОДВАЛ -->
+  <footer class="mt-auto border-t border-slate-800/80 bg-slate-950 py-8 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="text-white font-bold">СТУЛЬЯ АСТАНА (@stulya_astany)</span> • Шоурум Mebel Lustra: г. Астана, пр. Аль-Фараби, 7/3 • Пространство MANO: ул. Асфендиярова, 5
+      </div>
+      <div>
+        Телефон / WhatsApp: <a href="https://wa.me/77476188385" class="text-emerald-400 font-semibold">+7 (747) 618-83-85 (Акмарал)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const PRODUCTS = [
+  {
+    "id": "SKU_01_KONE_BEIGE",
+    "shortcode": "DPfCi4CjA1l",
+    "category": "chair",
+    "title": "Дизайнерский стул «Kone» (Светлая рогожка, массив)",
+    "shortTitle": "СТУЛ KONE • НОВАЯ КОЛЛЕКЦИЯ",
+    "material": "Фактурная рогожка, ножки натуральное дерево",
+    "dimensions": "В 82 × Ш 52 × Г 54 см (посадка 46 см)",
+    "price": 23000,
+    "priceFormatted": "23 000 ₸",
+    "oldPrice": 29000,
+    "oldPriceFormatted": "29 000 ₸",
+    "kaspi12m": 1917,
+    "kaspi12mFormatted": "1 917 ₸",
+    "promoTag": "НОВАЯ КОЛЛЕКЦИЯ • ХИТ ПРОДАЖ 23 000 ₸",
+    "captionOriginal": "Новая коллекция! Стул Kone • Цена 23 000 тг • пр. Аль-Фараби, 7/3 (Mebel Lustra)",
+    "images": {
+      "scandi": "assets/SKU_01_KONE_BEIGE_scandi.jpg",
+      "luxury": "assets/SKU_01_KONE_BEIGE_luxury.jpg",
+      "card": "assets/SKU_01_KONE_BEIGE_card.jpg",
+      "orig": "assets/SKU_01_KONE_BEIGE_orig.jpg",
+      "ba": "assets/SKU_01_KONE_BEIGE_ba.jpg"
+    }
+  },
+  {
+    "id": "SKU_02_KONE_GRAPHITE",
+    "shortcode": "DPfCi4CjA1l",
+    "category": "chair",
+    "title": "Стул «Kone» Макро-фактура (Премиум рогожка песочный меланж)",
+    "shortTitle": "СТУЛ KONE • ПРЕМИУМ РОГОЖКА",
+    "material": "Износостойкая рогожка меланж, деревянные ножки",
+    "dimensions": "В 82 × Ш 52 × Г 54 см (посадка 46 см)",
+    "price": 23000,
+    "priceFormatted": "23 000 ₸",
+    "oldPrice": 29000,
+    "oldPriceFormatted": "29 000 ₸",
+    "kaspi12m": 1917,
+    "kaspi12mFormatted": "1 917 ₸",
+    "promoTag": "СУПЕРЦЕНА 23 000 ₸ • В НАЛИЧИИ В АСТАНЕ",
+    "captionOriginal": "Новая коллекция! Стул Kone • Цена 23 000 тг • пр. Аль-Фараби, 7/3 (Mebel Lustra)",
+    "images": {
+      "scandi": "assets/SKU_02_KONE_GRAPHITE_scandi.jpg",
+      "luxury": "assets/SKU_02_KONE_GRAPHITE_luxury.jpg",
+      "card": "assets/SKU_02_KONE_GRAPHITE_card.jpg",
+      "orig": "assets/SKU_02_KONE_GRAPHITE_orig.jpg",
+      "ba": "assets/SKU_02_KONE_GRAPHITE_ba.jpg"
+    }
+  },
+  {
+    "id": "SKU_03_ASH_LINEN_CHAIR",
+    "shortcode": "DH0uf_HozQk",
+    "category": "chair",
+    "title": "Дизайнерский стул из массива Ясеня и натурального Льна",
+    "shortTitle": "СТУЛ ЯСЕНЬ & ЛЁН (АКЦИЯ 4+1)",
+    "material": "Натуральный Лён, массив дерева Ясень",
+    "dimensions": "В 76 × Ш 57 × Г 58 см (посадка 46 см)",
+    "price": 49000,
+    "priceFormatted": "49 000 ₸",
+    "oldPrice": 57000,
+    "oldPriceFormatted": "57 000 ₸",
+    "kaspi12m": 4083,
+    "kaspi12mFormatted": "4 083 ₸",
+    "promoTag": "АКЦИЯ 4+1: КУПИТЕ 4 — 5-Й СТУЛ В ПОДАРОК 🎁",
+    "captionOriginal": "Акция 4+1! Купите 4 и получите 1 в подарок. Материал Лён, Дерево Ясень. Размер: В 76, Ш 57, Г 58, посадка 46 см. Цена: 57.000 тг (со скидкой 49.000 тг)",
+    "images": {
+      "scandi": "assets/SKU_03_ASH_LINEN_CHAIR_scandi.jpg",
+      "luxury": "assets/SKU_03_ASH_LINEN_CHAIR_luxury.jpg",
+      "card": "assets/SKU_03_ASH_LINEN_CHAIR_card.jpg",
+      "orig": "assets/SKU_03_ASH_LINEN_CHAIR_orig.jpg",
+      "ba": "assets/SKU_03_ASH_LINEN_CHAIR_ba.jpg"
+    }
+  },
+  {
+    "id": "SKU_04_NORDIC_OAK_TABLE",
+    "shortcode": "DGajaa-IwG-",
+    "category": "table",
+    "title": "Круглый стол «Нордик» Ø120 см (МДФ + Массив карагача)",
+    "shortTitle": "СТОЛ НОРДИК Ø120 СМ",
+    "material": "Столешница МДФ и шпон дуба, ножки массив карагача",
+    "dimensions": "Диаметр 120 см (можно на заказ другие размеры)",
+    "price": 169000,
+    "priceFormatted": "169 000 ₸",
+    "oldPrice": 199000,
+    "oldPriceFormatted": "199 000 ₸",
+    "kaspi12m": 14083,
+    "kaspi12mFormatted": "14 083 ₸",
+    "promoTag": "ВЫГОДА 30 000 ₸ • 169 000 ₸ СО СКИДКОЙ",
+    "captionOriginal": "Стол Нордик Нераздвижной • Столешница из МДФ и шпона дуба • Ножки массив карагача • Размер: 120 см • Цена: 199.000 тг (За нал.расчет 169.000 тг)",
+    "images": {
+      "scandi": "assets/SKU_04_NORDIC_OAK_TABLE_scandi.jpg",
+      "luxury": "assets/SKU_04_NORDIC_OAK_TABLE_luxury.jpg",
+      "card": "assets/SKU_04_NORDIC_OAK_TABLE_card.jpg",
+      "orig": "assets/SKU_04_NORDIC_OAK_TABLE_orig.jpg",
+      "ba": "assets/SKU_04_NORDIC_OAK_TABLE_ba.jpg"
+    }
+  },
+  {
+    "id": "SKU_05_LIQUIDATION_TABLE_1",
+    "shortcode": "DI0Fww7ojV5",
+    "category": "table",
+    "title": "Круглый стол «Бруни» Ø100 см на реечной колонне (Ликвидация)",
+    "shortTitle": "СТОЛ БРУНИ Ø100 СМ • ЛИКВИДАЦИЯ",
+    "material": "Натуральный шпон дуба, массивная колонна-опора",
+    "dimensions": "Диаметр 100 см • В наличии 1 шт. в шоуруме",
+    "price": 139000,
+    "priceFormatted": "139 000 ₸",
+    "oldPrice": 191000,
+    "oldPriceFormatted": "191 000 ₸",
+    "kaspi12m": 11583,
+    "kaspi12mFormatted": "11 583 ₸",
+    "promoTag": "ЛИКВИДАЦИЯ СТОЛОВ • ВЫГОДА 52 000 ₸",
+    "captionOriginal": "ЛИКВИДАЦИЯ СТОЛОВ! Стол Бруни, размер 100 см. Старая цена 191 000 тг, цена со скидкой 139 000 тг! пр. Аль-Фараби, 7/3",
+    "images": {
+      "scandi": "assets/SKU_05_LIQUIDATION_TABLE_1_scandi.jpg",
+      "luxury": "assets/SKU_05_LIQUIDATION_TABLE_1_luxury.jpg",
+      "card": "assets/SKU_05_LIQUIDATION_TABLE_1_card.jpg",
+      "orig": "assets/SKU_05_LIQUIDATION_TABLE_1_orig.jpg",
+      "ba": "assets/SKU_05_LIQUIDATION_TABLE_1_ba.jpg"
+    }
+  },
+  {
+    "id": "SKU_06_DINING_GROUP_ASTANA",
+    "shortcode": "DGxRXojo7Qt",
+    "category": "dining_group",
+    "title": "Стол «JAPANDI» на реечных опорах + дизайнерские кресла из массива",
+    "shortTitle": "СТОЛ JAPANDI & КРЕСЛА МАССИВ",
+    "material": "Шпон дуба, массив ясеня/карагача, премиум рогожка",
+    "dimensions": "Стол Japandi 210 000 ₸ • Кресла по 49 000 – 53 000 ₸",
+    "price": 210000,
+    "priceFormatted": "210 000 ₸",
+    "oldPrice": 265000,
+    "oldPriceFormatted": "265 000 ₸",
+    "kaspi12m": 17500,
+    "kaspi12mFormatted": "17 500 ₸",
+    "promoTag": "ХИТ СТИЛЯ JAPANDI • В НАЛИЧИИ И НА ЗАКАЗ",
+    "captionOriginal": "Стол JAPANDI со скидкой 210 000 тг, Дизайнерский стул с подлокотниками 53 000 тг, Стул с полукруглой спинкой 49 000 тг, Стол Нордик 169 000 тг",
+    "images": {
+      "scandi": "assets/SKU_06_DINING_GROUP_ASTANA_scandi.jpg",
+      "luxury": "assets/SKU_06_DINING_GROUP_ASTANA_luxury.jpg",
+      "card": "assets/SKU_06_DINING_GROUP_ASTANA_card.jpg",
+      "orig": "assets/SKU_06_DINING_GROUP_ASTANA_orig.jpg",
+      "ba": "assets/SKU_06_DINING_GROUP_ASTANA_ba.jpg"
+    }
+  },
+  {
+    "id": "SKU_07_FLOOR_LAMP_LED",
+    "shortcode": "DGdAQqXIMM1",
+    "category": "lighting",
+    "title": "Дизайнерский напольный LED-торшер Minimal Frame",
+    "shortTitle": "НАПОЛЬНЫЙ ТОРШЕР LED",
+    "material": "Чёрный анодированный металл, мягкий тёплый LED-контур",
+    "dimensions": "Высота 165 см • Напольный куб-основание",
+    "price": 78000,
+    "priceFormatted": "78 000 ₸",
+    "oldPrice": 95000,
+    "oldPriceFormatted": "95 000 ₸",
+    "kaspi12m": 6500,
+    "kaspi12mFormatted": "6 500 ₸",
+    "promoTag": "В НАЛИЧИИ В ШОУРУМЕ MEBEL LUSTRA",
+    "captionOriginal": "Напольный торшер! • Светодиод • Цена: 78 000 тг • Аль-Фараби проспект, 7/3 (вывеска Mebel Lustra)",
+    "images": {
+      "scandi": "assets/SKU_07_FLOOR_LAMP_LED_scandi.jpg",
+      "luxury": "assets/SKU_07_FLOOR_LAMP_LED_luxury.jpg",
+      "card": "assets/SKU_07_FLOOR_LAMP_LED_card.jpg",
+      "orig": "assets/SKU_07_FLOOR_LAMP_LED_orig.jpg",
+      "ba": "assets/SKU_07_FLOOR_LAMP_LED_ba.jpg"
+    }
+  }
+];
+    const activeViewMode = {}; // sku_id -> 'scandi' | 'luxury' | 'card' | 'orig'
+
+    function trackEvent(eventName, detail = '') {
+      try {
+        const scr = `${window.screen.width}x${window.screen.height}`;
+        const ref = document.referrer || '';
+        const url = `/api/track?event=${encodeURIComponent(eventName)}&detail=${encodeURIComponent(detail)}&scr=${encodeURIComponent(scr)}&ref=${encodeURIComponent(ref)}&t=${Date.now()}`;
+        fetch(url, { cache: 'no-store' })
+          .then(r => r.json())
+          .then(data => {
+            if (data && data.display_views) {
+              const el = document.getElementById('live-view-counter');
+              if (el) el.textContent = data.display_views;
+            }
+          })
+          .catch(() => {});
+      } catch (e) {}
+    }
+
+    function updateHeroSlider(val) {
+      const clip = document.getElementById('hero-before-clip');
+      if (clip) clip.style.width = val + '%';
+    }
+
+    function setHeroComparison(idx) {
+      const p = PRODUCTS[idx] || PRODUCTS[0];
+      document.getElementById('hero-after-img').src = p.images.luxury;
+      document.getElementById('hero-before-img').src = p.images.orig;
+      document.getElementById('hero-ba-range').value = 42;
+      updateHeroSlider(42);
+      trackEvent('hero_compare_switch', p.id);
+    }
+
+    function switchCardView(skuId, mode) {
+      activeViewMode[skuId] = mode;
+      trackEvent('switch_card_mode', `${skuId}:${mode}`);
+      const p = PRODUCTS.find(x => x.id === skuId);
+      if (!p) return;
+      const imgEl = document.getElementById('img-' + skuId);
+      const badgeEl = document.getElementById('mode-badge-' + skuId);
+      if (imgEl) imgEl.src = p.images[mode];
+
+      const labels = {
+        scandi: '✨ ИИ-Интерьер: Сканди (Google Flow)',
+        luxury: '🌙 ИИ-Интерьер: Вечерний Люкс Астана',
+        card: '📊 Готовая Инфографика Kaspi 0-0-12',
+        orig: '📷 Исходное фото из Instagram'
+      };
+      if (badgeEl) badgeEl.textContent = labels[mode] || '';
+
+      ['scandi', 'luxury', 'card', 'orig'].forEach(m => {
+        const btn = document.getElementById('btn-' + skuId + '-' + m);
+        if (btn) {
+          if (m === mode) {
+            btn.className = 'px-2.5 py-1 rounded-lg bg-amber-400 text-slate-950 font-bold text-[11px] transition';
+          } else {
+            btn.className = 'px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-[11px] transition';
+          }
+        }
+      });
+    }
+
+    function openBaModal(skuId) {
+      const p = PRODUCTS.find(x => x.id === skuId);
+      if (!p) return;
+      trackEvent('open_ba_collage', skuId);
+      document.getElementById('ba-modal-title').textContent = 'Наглядное сравнение «Было / Стало»: ' + p.title;
+      document.getElementById('ba-modal-img').src = p.images.ba;
+      document.getElementById('ba-modal').classList.remove('hidden');
+    }
+
+    function closeBaModal() {
+      document.getElementById('ba-modal').classList.add('hidden');
+    }
+
+    function renderCatalog(filterCat = 'all') {
+      const grid = document.getElementById('catalog-grid');
+      const list = filterCat === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.category === filterCat);
+      grid.innerHTML = list.map(p => {
+        const mode = activeViewMode[p.id] || 'scandi';
+        const waText = encodeURIComponent(`Здравствуйте, Акмарал! Интересует модель из онлайн-каталога: ${p.title} (${p.priceFormatted}, Kaspi 0-0-12: ${p.kaspi12mFormatted}/мес). Есть в наличии на Аль-Фараби 7/3?`);
+        return `
+        <article class="card-glass rounded-2xl overflow-hidden flex flex-col justify-between border border-slate-800 hover:border-amber-400/40 transition shadow-xl">
+          <div>
+            <!-- Переключатель 4 режимов отображения -->
+            <div class="p-2.5 bg-slate-950/90 border-b border-slate-800 flex flex-wrap items-center justify-between gap-1">
+              <div class="flex flex-wrap gap-1">
+                <button id="btn-${p.id}-scandi" onclick="switchCardView('${p.id}', 'scandi')" class="px-2.5 py-1 rounded-lg bg-amber-400 text-slate-950 font-bold text-[11px] transition">✨ Сканди</button>
+                <button id="btn-${p.id}-luxury" onclick="switchCardView('${p.id}', 'luxury')" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-[11px] transition">🌙 Люкс</button>
+                <button id="btn-${p.id}-card" onclick="switchCardView('${p.id}', 'card')" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-[11px] transition">📊 Инфографика</button>
+                <button id="btn-${p.id}-orig" onclick="switchCardView('${p.id}', 'orig')" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-[11px] transition">📷 Было в IG</button>
+              </div>
+              <button onclick="openBaModal('${p.id}')" class="text-[11px] text-amber-300 hover:underline font-semibold px-1.5">Коллаж 3-в-1</button>
+            </div>
+
+            <!-- Изображение товара -->
+            <div class="relative aspect-[4/3] bg-slate-950 overflow-hidden">
+              <img id="img-${p.id}" src="${p.images[mode]}" alt="${p.title}" class="w-full h-full object-cover transition duration-300" />
+              <span id="mode-badge-${p.id}" class="absolute bottom-2.5 left-2.5 px-2.5 py-1 rounded-md bg-slate-950/85 text-amber-300 text-[11px] font-semibold border border-amber-400/30">
+                ✨ ИИ-Интерьер: Сканди (Google Flow)
+              </span>
+              <span class="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-md bg-rose-600/95 text-white text-[10px] font-bold uppercase tracking-wide shadow">
+                ${p.promoTag}
+              </span>
+            </div>
+
+            <!-- Описание и характеристики -->
+            <div class="p-5 space-y-3">
+              <h3 class="font-bold text-base sm:text-lg text-white leading-snug">${p.title}</h3>
+              <div class="space-y-1.5 text-xs text-slate-300">
+                <div><span class="text-slate-400">Материал:</span> <span class="text-white font-medium">${p.material}</span></div>
+                <div><span class="text-slate-400">Габариты:</span> <span class="text-white font-medium">${p.dimensions}</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Цена, Kaspi 0-0-12 и Кнопка WhatsApp -->
+          <div class="p-5 pt-0 space-y-3">
+            <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800 flex items-center justify-between">
+              <div>
+                <div class="text-[11px] text-slate-400 line-through">${p.oldPriceFormatted}</div>
+                <div class="text-xl font-extrabold text-emerald-400">${p.priceFormatted}</div>
+              </div>
+              <div class="kaspi-badge px-3 py-1.5 rounded-lg text-right">
+                <div class="text-[10px] font-bold uppercase text-white/90">Kaspi 0•0•12</div>
+                <div class="text-sm font-extrabold text-amber-200">${p.kaspi12mFormatted} / мес</div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/77476188385?text=${waText}" target="_blank"
+               class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg transition">
+              <span>💬 Узнать наличие / Бронь в WhatsApp</span>
+            </a>
+          </div>
+        </article>
+        `;
+      }).join('');
+    }
+
+    function filterCategory(cat) {
+      trackEvent('filter_category', cat);
+      ['all', 'chair', 'table', 'dining_group', 'lighting'].forEach(c => {
+        const btn = document.getElementById('filter-' + c);
+        if (!btn) return;
+        if (c === cat) {
+          btn.className = 'px-4 py-2 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs transition';
+        } else {
+          btn.className = 'px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs transition';
+        }
+      });
+      renderCatalog(cat);
+    }
+
+    function simulateWaQuestion(qKey) {
+      trackEvent('simulate_wa_assistant', qKey);
+      const box = document.getElementById('wa-chat-box');
+      const qa = {
+        price_kone: {
+          q: 'Здравствуйте! Сколько стоит стул Kone и какие у него размеры?',
+          a: 'Здравствуйте! 😊 <b>Стул Kone</b> из новой коллекции сейчас в наличии по спеццене <b>23 000 ₸</b> (в рассрочку Kaspi 0-0-12 всего <b>1 917 ₸/мес</b>).<br><br>📐 <b>Размеры:</b> высота 82 см, ширина 52 см, глубина 54 см, высота посадки 46 см. Обивка — износостойкая фактурная рогожка, ножки — натуральное дерево.<br><br>Подскажите, сколько штук вам нужно подобрать к столу? Я сразу передам ваш заказ менеджеру <b>Акмарал</b> для бронирования в шоуруме!'
+        },
+        kaspi: {
+          q: 'Есть ли рассрочка Kaspi 0-0-12 на круглый стол Нордик 120 см?',
+          a: 'Да, конечно! 💳 На <b>Круглый стол «Нордик» Ø120 см</b> (МДФ в шпоне дуба + ножки из массива карагача) действует рассрочка <b>Kaspi 0-0-12</b> без переплат — всего <b>14 083 ₸/мес</b> (цена за наличный расчёт со скидкой — <b>169 000 ₸</b> вместо 199 000 ₸).<br><br>Хотите, чтобы менеджер <b>Акмарал</b> выставила вам удалённый счёт в Kaspi.kz или отложила стол в зале на пр. Аль-Фараби, 7/3?'
+        },
+        address: {
+          q: 'Подскажите, где находится ваш шоурум в Астане и можно ли приехать посмотреть вживую?',
+          a: 'Будем рады видеть вас! 📍 Наши адреса в г. Астана:<br>1) <b>пр. Аль-Фараби, 7/3</b> (вывеска <b>Mebel Lustra</b>)<br>2) Новое пространство <b>@mano.store.kz</b> — <b>ул. Асфендиярова, 5</b>.<br><br>В зале можно вживую посидеть на всех моделях стульев и выбрать оттенок дерева. Напишите, в какое время вам удобно подъехать — менеджер <b>Акмарал (+7 747 618-83-85)</b> встретит вас!'
+        },
+        promo41: {
+          q: 'Расскажите подробнее про акцию 4+1 на стулья из ясеня!',
+          a: '🎁 По <b>Акции 4+1</b> при покупке 4 дизайнерских стульев из <b>массива дерева Ясень и натурального Льна</b> (высота 76 см, ширина 57 см, посадка 46 см) <b>5-й стул вы получаете абсолютно бесплатно в подарок!</b><br><br>Модель в наличии в двух благородных оттенках, количество ограничено. Передать ваш контакт менеджеру <b>Акмарал</b>, чтобы зафиксировать за вами подарочный 5-й стул?'
+        }
+      }[qKey];
+
+      if (!qa) return;
+      box.innerHTML += `
+        <div class="flex justify-end">
+          <div class="bg-emerald-700 text-white p-3 rounded-xl rounded-tr-none max-w-[80%]">${qa.q}</div>
+        </div>
+        <div class="flex justify-start">
+          <div class="bg-slate-800 text-slate-100 p-3 rounded-xl rounded-tl-none max-w-[88%] border border-emerald-500/30">${qa.a}</div>
+        </div>
+      `;
+      box.scrollTop = box.scrollHeight;
+    }
+
+    function copyPageLink() {
+      trackEvent('copy_boss_link', window.location.href);
+      navigator.clipboard.writeText(window.location.href);
+      const btn = document.getElementById('copy-link-btn');
+      btn.textContent = '✅ Ссылка скопирована!';
+      setTimeout(() => { btn.textContent = '🔗 Скопировать ссылку для руководителя'; }, 2500);
+    }
+
+    // Инициализация ссылки «Переслать руководителю» и счётчика визитов
+    window.addEventListener('DOMContentLoaded', () => {
+      renderCatalog('all');
+      trackEvent('pageview', window.location.pathname);
+      const forwardBtn = document.getElementById('forward-boss-wa');
+      const msg = `Посмотрите, нам сделали готовый демо-сайт с нашими столами и стульями @stulya_astany (с ИИ-интерьерами, карточками Kaspi 0-0-12 и цифровым помощником в WhatsApp, который отвечает на частые вопросы клиентов по ценам и размерам 24/7): ${window.location.href}`;
+      forwardBtn.href = `https://wa.me/?text=${encodeURIComponent(msg)}`;
+      forwardBtn.addEventListener('click', () => trackEvent('click_forward_boss_wa', 'whatsapp_share'));
+    });
+  </script>
+</body>
+</html>
